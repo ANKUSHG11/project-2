@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Mobile App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 12px 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #5a01b3, #1e60e3);
+            transform: scale(1.03);
+        }
+
+        blockquote {
+            border-left: 4px solid #7e57c2;
+            padding-left: 20px;
+            font-style: italic;
+            color: #444;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+
+        <!-- Hero -->
+        <section class="section text-center" id="hero">
+            <h1 data-aos="fade-up">Welcome to Our Mobile App</h1>
+            <p data-aos="fade-up">Experience the future of productivity in your pocket.</p>
+            <button class="btn btn-custom mt-3" data-aos="zoom-in">Download Now</button>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+            <h2 class="text-center mb-4" data-aos="fade-up">Features</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <h4>🚀 Fast & Secure</h4>
+                    <p>Enjoy a seamless and secure experience with blazing-fast performance.</p>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <h4>🎨 Intuitive UI</h4>
+                    <p>Navigate effortlessly through a sleek, user-friendly design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots -->
+        <section class="section text-center" id="screenshots">
+            <h2 class="mb-4" data-aos="fade-up">App Screenshots</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-3" data-aos="flip-left">
+                    <img src="screenshot1.png" alt="Screenshot 1" class="img-fluid">
+                </div>
+                <div class="col-md-5 mb-3" data-aos="flip-right">
+                    <img src="screenshot2.png" alt="Screenshot 2" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section text-center" id="testimonials">
+            <h2 class="mb-4" data-aos="fade-up">What Users Say</h2>
+            <blockquote data-aos="fade-left">"This app changed my workflow entirely!"</blockquote>
+            <blockquote data-aos="fade-right" class="mt-3">"Super easy to use and highly efficient."</blockquote>
+        </section>
+
+        <!-- CTA -->
+        <section class="section text-center" id="cta">
+            <h2 data-aos="zoom-in">Ready to Boost Your Productivity?</h2>
+            <button class="btn btn-custom mt-3" data-aos="fade-up">Get Started</button>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap + AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
